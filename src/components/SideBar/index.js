@@ -11,11 +11,11 @@ import {
 
 const SideBar = ({ isOpen, toggle }) => {
     return (
-        <SideBarContainer>
+        <SideBarContainer isOpen={isOpen} onClick={toggle}>
             <Icon>
                 <CloseIcon />
             </Icon>
-            <SideBarMenu isOpen={isOpen} onClick={toggle}>
+            <SideBarMenu>
                 <SideBarLink to="/">Pizzas</SideBarLink>
                 <SideBarLink to="/">Desserts</SideBarLink>
                 <SideBarLink to="/">Full Menu</SideBarLink>
